@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 設定IE相容模式(捨棄IE) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 網站作者/擁有者 -->
+    <meta name="author" content="快樂美肌計畫">
+    <!-- 網頁描述，簡單介紹網頁內容 -->
+    <meta name="description" content="介紹壓力, 溫度, 空氣汙染影響皮膚的原因，說明品牌背景說明、目標、行銷手法">
+    <!-- 網頁編輯器 (可不打VS CODE版本，因更新速度太快)-->
+    <meta name="generator" content="VisualStudioCode">
+    <!-- 關鍵字，google排除權重，其他搜尋引擎仍然使用 -->
+    <meta name="keywords" content="壓力, 溫度, 空氣汙染, 肌膚保養, 矢車菊萃取液, 品牌親民化, 溫和不刺激" >
+    <!-- favicon我的最愛(書籤)圖標 -->     <!-- integrity遠端存取方式，CDN特徵碼驗證 -->
+    <!-- icon:\根目錄(本機) /根目錄(遠端)，如上傳後無法顯示需加入/後可刪除，就有icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/custom.css">
+        <!-- Google tag (gtag.js) -->
+    <title>蒔光．儛之-首頁</title>
+</head>
+<!-- GA追蹤分析 -->
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+          <!-- 滿版 -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">蒔光．儛之</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- 導覽按鈕列 -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <!-- href為連結路徑，讓網頁連結到其他地方。 href前面通常有個＜a＞標籤， a 代表超連結 -->
+                    <!-- active為明眼人(正常人)，aria-current為無障礙(視障人士)，建議須做，因現在都提倡無障礙 -->
+                    <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="news.html">最新消息</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="location.html">關於我們</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">產品列表</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="skincare.html">美肌必備</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-155915.url.tw" target="_blank">留言發問</a>
+                  </li>
+                </ul>
+                <!-- form:表單(PHP使用到)、PHP ，input & button可獨立-->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+      <!-- 輪播圖 -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <!-- data-bs-slide-to 起始值為0 開始-->
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- alt、title皆為SEO，alt為圖片無法加載時，將 alt 的內容展示。title為鼠標懸浮在圖片上顯示的文字(優先) -->
+            <img src="images/index/logo.webp" class="d-block w-100" alt="品牌logo" title="品牌logo" aria-label="品牌logo">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/bath-7474000_1280.webp" class="d-block w-100" alt="芳香洗澡" title="芳香洗澡" aria-label="芳香洗澡">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/ai-generated-8626807_1280.webp" class="d-block w-100" alt="保養皮膚" title="保養皮膚" aria-label="保養皮膚">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/dried-flowers-4017785_1280.webp" class="d-block w-100" alt="中草藥" title="中草藥" aria-label="中草藥">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- 內容資料 -->
+      <!-- 一列中分三欄，簡寫打法:.container>.row>(.col-lg-4*3) -->
+      <div class="container">
+          <div class="row">
+            <!-- col-lg-4:一列分為4/order-md(斷點)-0:中型斷點(電腦)順位1/mt-4 上(top)外距4級 -->
+            <div class="col-lg-4 order-md-0 mt-4">
+              <!-- rounded-circle:照片顯示圓形，寬度、範圍以100%顯示(參考欄寬)，高度跟隨寬度。意思為跟著外層縮放。此層的外層為col-lg-4，因此rounded-circle跟隨它-->
+              <img src="images/index/stress.webp" class="rounded-circle w-100 opacity-75" data-bs-toggle="modal" data-bs-target="#stress" alt="壓力" title="壓力" aria-label="壓力" type="button">
+              <!-- Modal id=data-bs-target作為連結，一定得輸入英文 -->
+              <div class="modal fade" id="stress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">壓力</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/index/stress.webp" width="100%" alt="壓力">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title"><span style="color: #8b8989;">壓力</span></h2>
+                <p class="card-text">過度活化皮膚的細胞，促進皮膚老化並使皮膚失去彈性、產生皺紋和鬆弛等現象。<br>
+                影響皮脂分泌，使皮膚變得油膩，易造成暗瘡和粉刺問題。<br>
+                降低皮膚的自我修復能力，易受到外界刺激和感染，引發紅腫、瘙癢等炎症反應。</p>
+                <!-- 超連結按鈕為<a>標籤，無法設定對齊(需透過外層p標籤對齊) -->
+                <!-- target="blank"為新增分頁頁籤。class="btn 設定按鈕外觀(CSS給人看)。role為給機器人判讀。 -->
+                <p class="text-end"><a href="https://www.20skin.tw/share_info.php?no=349&utm_source=FB_4g&utm_medium=post&utm_campaign=regular" target="_blank" class="btn btn-outline-warning" role="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="即將離開本網站">壓力</a></p>
+              </div>
+            </div>
+            <div class="col-lg-4 order-md-1 mt-4">
+              <img src="images/index/air pollution.webp" class="rounded-circle w-100 opacity-75" data-bs-toggle="modal" data-bs-target="#air" alt="空氣汙染" title="空氣汙染" aria-label="空氣汙染" type="button">
+             <!-- Modal -->
+              <div class="modal fade" id="air" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">空氣汙染</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/index/air pollution.webp" width="100%" alt="空氣汙染">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title"><span style="color: rgb(139 137 137);" >空氣汙染</span></h2>
+                <p class="card-text">細顆粒物質（PM2.5）是空氣中主要汙染的物質，它細小粒子能滲透皮膚毛孔，引起毛孔阻塞和炎症反應，導致黑頭、粉刺等問題。<br>
+                揮發性有機化合物（VOCs）是易揮發的化學物質，常見於汽車尾氣、工業廢氣、家具製造過程中釋放的氣體等。長期接觸VOCs皮膚會過敏和敏感，出現紅腫、瘙癢等症狀。<br>
+                臭氧（O3）會破壞皮膚的屏障功能，引起皮膚乾燥、過敏、加速皮膚老化等問題。<br>
+                <p class="text-end"><a href="http://w3.hcepb.gov.tw/hcepb/02_information/plan_all/air/iaqweb/achievement.php?no=45" target="_blank" class="btn btn-outline-warning" role="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="即將離開本網站">空氣汙染</a></p>
+              </div>
+            </div>
+            <div class="col-lg-4 order-md-2 mt-4">
+              <img src="images/index/Extreme climate.webp" class="rounded-circle w-100 opacity-75" data-bs-toggle="modal" data-bs-target="#tem" alt="溫度" title="溫度" aria-label="溫度"  type="button">
+              <!-- Modal -->
+              <div class="modal fade" id="tem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">溫度</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/index/Extreme climate.webp" width="100%" alt="溫度">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title"><span style="color: rgb(139 137 137);">溫度</span></h2>
+                <p class="card-text">寒冷的溫度會降低皮膚的血液循環，使皮膚變得乾燥、粗糙，並產生龜裂和脫屑。<br>
+                高溫和悶熱的環境易引起皮膚出汗，使皮膚表面濕潤，易滋生細菌，而引起皮膚感染和炎症反應。<br>
+                面對現在極端的溫度的變化，我們要根據不同季節和溫度環境，選擇適合的護膚品和保濕產品，加強對皮膚的護理和保護。<br>
+                <p class="text-end"><a href="https://www.healthplus.hk/page270?article_id=15058" target="_blank" class="btn btn-outline-warning" role="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="即將離開本網站">溫度</a></p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- my-5(置中)由mt-5+mb-5組成 -->
+          <div class="row my-5">
+              <div class="col-md-7">
+                <h2>背景說明</h2>
+                <p>隨著21世紀科技的不斷進步，現代人除了承受日益增加的工作和生活壓力外，還必須應對環境破壞對人體健康帶來的挑戰，。污染物直接對皮膚造成傷害，同時當這些污染物被人體系統性吸收後，也會對皮膚造成間接的損害。因此保護皮膚免受污染物侵害，是現代人日常護膚不可忽視的重要議題。</p>
+              </div>
+              <div class="col-md-5">
+                <!-- img-fluid設為響應式圖片，mx-auto照片水平置中 -->
+                  <img src="images/index/close-up-1866841_1280.webp"class="img-fluid mx-auto" alt="破壞皮膚"  title="破壞皮膚" aria-label="破壞皮膚">
+              </div>
+          </div>
+          <hr>
+          <div class="row my-5">
+            <div class="col-md-7 order-md-1">
+              <h2>目標</h2>
+              一、傳承：傳承文化，延續實驗精神，進而建立自我價值。<br>
+              二、行銷：行銷自創品牌和產品，吸引產業注目而製造新的商機。<br>
+              三、創新：主打添加矢車菊萃取液，有鎮靜、舒緩功效，滋潤肌膚。使用「溫和不刺激肌膚的原料」研發產品，且對毛髮、肌膚、唇部細胞的有「修護、保護力」，再藉由香氛吸入體內達到「身心靈放鬆舒壓」為三大主要目標。<br>
+            </div>
+            <div class="col-md-5 order-md-0">
+                <img src="images/index/lab-1866841_1280.webp" alt="創新研發" class="img-fluid mx-auto" title="創新研發" aria-label="創新研發">
+            </div>
+          </div>
+          <hr>
+          <div class="row my-5">
+            <div class="col-md-7">
+              <h2>行銷計畫</h2>
+              <p> 由兩大通訊軟體(Facebook、Instagram)宣傳品牌、理念、產品，跟網友小互動，讓品牌更親民化。價格以開架方式為主要行銷通路，親民價格讓消費者減少經濟壓力。且有先前預購價、滿額贈品或是系列套組搭配之優惠活動，提升買氣。</p>
+            </div>
+            <div class="col-md-5">
+                <img src="images/index/sells-1866841_1280.webp" alt="行銷手法" class="img-fluid mx-auto" title="行銷手法" aria-label="行銷手法">
+            </div>
+          </div>
+          <hr>
+      </div>
+      <!-- 頁尾(版權宣告，返回首頁) -->
+      <footer class="container">
+        <!-- folat 浮動對齊 -->
+        <p class="float-end"><a href="#top">回到頁面頂端</a></p>
+        <p class="text-start">蒔光．儛之 &copy;2024 </p>
+      </footer>
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- 改版前的tooltips -->
+     <!-- <script>
+      $(function(){$('[data-toggle="tooltip"]').tooltip()})
+    </script> -->
+    <!-- 改版後的tooltips -->
+    <script>
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+    </script>
+</body>
+</html>

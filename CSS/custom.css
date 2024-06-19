@@ -1,0 +1,104 @@
+/* .text-pri{color: rgb(245, 156, 114);}
+.text-sec{color: #e39cf5;} */
+
+/* googlefonts雲端字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+:root,
+[data-bs-theme=light] {
+    --bs-dark-rgb:255, 248, 199;
+    /* 更改tooltips背景顏色 */
+    --bs-emphasis-color: #3f1f01;
+}
+
+
+.navbar-dark{
+--bs-navbar-color: rgb(186, 149, 147);
+--bs-navbar-hover-color: rgb(186, 45, 11);
+--bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+--bs-navbar-active-color: rgb(186, 45, 11);
+--bs-navbar-brand-color: rgb(221, 147, 105);
+--bs-navbar-brand-hover-color: rgb(238, 198, 152);
+}
+
+/* 雲端字體套用在body標籤 */
+body{
+    font-family: "微軟正黑體","Noto Sans TC", sans-serif;
+  }
+
+/* 選取器是標籤，影響整體。 */
+h2 {font-size: 32px;font-weight: 900;color: #ffb331;}
+h5 {font-size: 20px;font-weight: 900;color: #fcc277 !important;}
+/* 選取器是類別，影響個別，需手動套用。 */
+.h2-custom-pink{font-size: 32px;font-weight: 900;color: blue;}
+
+/* 拿掉文字超連結下底線，選取器:複合(兩層標籤)，下底線預設:underline*/
+footer a{
+    text-decoration: none;
+}
+
+
+
+.iconTitle{
+/* 大小與h2衝突，因此需加"important"優先執行 */
+font-size: 3rem !important;
+color: #ffb331;
+/* 基線-垂直對齊文字下緣 */
+vertical-align: bottom;
+}
+
+
+/* 自訂邊框樣式。可簡寫為border:dotted 2px 5px red*/
+.card-custom{
+    border-style: dotted;
+    border-width: 2px;
+    border-radius: 5px ;
+    border-color: rgb(94, 94, 94) 
+
+}
+
+/* 編號清單 */
+.list-no{ list-style-type:square}
+.list-se{ list-style-type: decimal-leading-zero;}
+.list-thr{list-style-type:circle}
+
+/* location.html中套用card(bootstrap中的模板)會有邊框，因此需要在這取消邊框 */
+.card-no-border{
+    border: none;
+}
+
+.textIndent{text-indent: 2rem;}
+
+/* 調整modal彈出圖片大小，於modal-body<img src="xxx" "width=100%">參考父層 */
+.modal {
+--bs-modal-width: 600px;
+}
+
+/* 無障礙-文字對比 */
+/* footer{background-color:#333344;color: #DDBBBB;} */
+
+
+
+
+
+
+
+
+
+
+
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6c757d;
+  --bs-btn-border-color: #6c757d; /* 外框 */
+  --bs-btn-hover-color: #fff/* 按下字的顏色 */;
+  --bs-btn-hover-bg: #5c636a;/* 按下底色顏色 */
+  --bs-btn-hover-border-color: #565e64;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #565e64;
+  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;}
